@@ -51,7 +51,9 @@ $ pip3 install pymysql
 ```
 ### Installation
 To replicate the Initial Data in database, run the `dump.sql` file in MySQL CLI.
-`mysql> source \{pathtoyourfile}\dump.sql;`
+```
+mysql> source \{pathtoyourfile}\dump.sql;
+```
 Change the username and password in the following lines(770-774) in WorldCup.py
 ```
 conn = pymysql.connect(host="localhost",
